@@ -1,0 +1,10 @@
+                                                                           FINAL PROJECT
+
+
+
+Here I'll use import java.io.file and import java.io.IOException for doing file operations and scanner for scanning the user inputs 
+Then I'll use ifelse statement, switch statement, for loop and while loop
+I'll sort my files using for loop then using switch statement I create ,search and delete a file here the scanner will retrieve the user inputs and check with the conditions
+then will give some outputs.
+This will help me to understand about the file operations then how to use multiple conditions using the loops and statements.
+finally I push my code into git hub repository.
