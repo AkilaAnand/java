@@ -1,0 +1,1243 @@
+                                                                        LEARNERS ACADEMY
+
+HTML---LOGIN
+************
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AKILA</title>
+</head>
+<style type="text/css">
+.body {
+	border:1px solid green;
+	border-radius:10px;
+	padding-top: 15px;
+	padding : 20px;
+	max-width: 300px; 
+  	margin: auto;
+}
+.btn {
+	padding: 1% 3%;
+}
+
+.h{
+	max-width: 250px;
+	margin: auto;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	color: green;
+}
+
+.main{
+	background-color: #FFFAFA;
+}
+
+.ad {
+	color: red;
+}
+</style>
+
+<body class="main">
+
+<hr>
+<h3 class="h"><a class="ad">ADMINISTREATION</a> LOGIN</h3>
+
+<div class="body">
+
+<b>USER NAME</b><br>
+<input type="text" name="assigncls" required="required"><br><br>
+
+<b>USER PASSWORD</b><br>
+<input type="password" name="classid" required="required"><br><br>
+
+<a href="HOME.html">
+<button class="btn" type="submit">LogIn</button>
+</a><br>
+
+</div>
+</body>
+</html>
+
+HTML---HOME PAGE
+****************
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AKILA</title>
+
+<style type="text/css">
+.main{
+	background-color: #FFFAFA;
+}
+
+.bx {
+  background-color: black;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.bx a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius:15px;
+  font-size: 17px;
+}
+
+.bx a:hover {
+	border-radius:15px;
+  	background-color: #F4A460;
+  	color: white;
+}
+
+.bx a.active {
+  	background-color: #F4A460;
+  	color: white;
+}
+
+.lo {
+	border-radius:15px;
+	background-color: #F4A460;
+	color:white;
+	float: right;
+}
+
+.head{
+font-family: Garamond;
+	font-size:30px;
+	color: green;
+	padding:1px;
+	max-width:500px;
+	padding-top: 100px;
+}
+
+.dev-op {
+  overflow: hidden;
+  background-color: black;  
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 20%;
+  padding: 14px 16px;
+  border-radius: 15px;
+}
+
+.c{
+	color: white;
+}
+
+</style>
+</head>
+
+<body class="main">
+
+<a class="head">THE LEARNER'S ACADEMY</a>
+<hr>
+<br>
+<div class="bx">
+<a class="active" href="HOME.html">HOME</a>
+<a href="studentRETRIVE.html">STUDENT'S</a>
+<a href="SUBTECH.html">TEACHER'S</a>
+<a href="classHOME.html">CLASS</a>
+<a href="SUBJECT.html">SUBJECT</a>
+<a href="REPORT.html">REPORT</a>
+<a href="LogIn.html">LogIn</a>
+<div class="lo">
+<a class="lo" href="LOGOUT.html">LOGOUT</a>
+</div>
+</div>
+
+</body>
+</html>
+
+HTML CODE--->ADD NEW CLASS
+**************************
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AKILA</title>
+</head>
+<style type="text/css">
+.body {
+	border:1px solid blue;
+	border-radius:10px;
+	padding-top: 15px;
+	padding : 20px;
+	max-width: 300px; 
+  	margin: auto;
+}
+.btn {
+	padding: 1% 3%;
+}
+
+.h{
+	max-width: 270px;
+	margin: auto;
+	padding-bottom: 20px;
+	padding-top: 10%;
+	color: blue;
+}
+
+.main{
+	background-color: #FFFAFA;
+}
+
+</style>
+
+<body class="main">
+<hr>
+<h3 class="h">ADD NEW CLASS RECORD</h3>
+<div class="body">
+
+<form action="addCLASS" method="POST">
+
+<b>CLASS ID</b><br><br>
+<input type="number" name="classid" required="required"><br><br>
+
+<b>CLASS NAME</b><br><br>
+<input type="text" name="classname" required="required"><br><br>
+
+<button class="btn" type="submit">Save</button>
+</form>
+</div>
+</body>
+</html>
+
+
+HTML CODE
+*********
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AKILA</title>
+</head>
+<style type="text/css">
+.body {
+	border:1px solid blue;
+	border-radius:10px;
+	padding-top: 15px;
+	padding : 20px;
+	max-width: 300px; 
+  	margin: auto;
+}
+.btn {
+	padding: 1% 3%;
+}
+
+.h{
+	max-width: 295px;
+	margin: auto;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	color: blue;
+}
+
+.main{
+	background-color: #FFFAFA;
+}
+
+.as{
+	color: red;
+}
+
+.bttn {
+	padding: 1% 3%;
+}
+
+</style>
+
+<body class="main">
+<hr>
+<h3 class="h">ASSIGN <a class="as">CLASS</a> TO TEACHER</h3>
+<div class="body">
+
+<form action="" method="post">
+
+<b>CLASS ID</b><br> 
+<input type="number" name="techid" required="required"><br><br>
+
+<b>CLASS NAME</b><br> 
+<input type="text" name="ssubject" required="required"><br><br>
+
+<b>ASSIGN TECHER</b><br>
+<input type="text" name="assigntech" required="required"><br><br>
+
+<button class="bttn" type="submit">Save</button>
+</form>
+
+</div>
+</body>
+</html>
+
+HTML CODE
+*********
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AKILA</title>
+<style type="text/css">
+
+.body{
+	border:1px solid blue;
+	border-radius:10px;
+	padding-top: 2px;
+	padding : 30px;
+	max-width: 450px; 
+  	margin: auto;
+}
+
+.btn5{
+	padding: 1% 3%;
+	cursor: pointer;
+}
+
+.btn6{
+	padding: 1% 3%;
+	cursor: pointer;
+}
+
+.btn7{
+	padding: 1% 3%;
+	cursor: pointer;
+}
+
+.main{
+	background-color: #FFFAFA;
+}
+
+.hed{
+	padding: 10px;
+	margin: auto;
+	max-width: 200px;
+	padding-top: 2%;
+	padding-bottom: 3%;
+	color: blue;
+}
+
+.subhed{
+	color: red;
+}
+
+</style>
+</head>
+<body class="main">
+<hr class="li4">
+<h3 class="hed"><a class="subhed">CLASS</a> OPERATIONS</h3>
+
+<div class="body">
+
+<h3>ADD NEW CLASS</h3>
+<a href="addnewCLASS.html">
+<input type="submit" name="newclass" value="Add" class="btn5">
+</a><br><br>
+
+<hr>
+
+<h3>ASSIGNED CLASSE'S</h3>
+<form action="classLIST" method="post">
+<input type="submit" name="classlist" value="List" class="btn6">
+</form><br><br>
+
+<hr>
+
+<h3>CLASS LIST</h3>
+<form action="NEWaddedCLASS" method="post">
+<input type="submit" name="assignclass" value="See" class="btn7">
+</form><br><br>
+
+</div>
+</body>
+</html>
+
+
+HTML CODE
+*********
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AKILA</title>
+</head>
+<style type="text/css">
+.body {
+	border:1px solid blue;
+	border-radius:10px;
+	padding-top: 15px;
+	padding : 20px;
+	max-width: 300px; 
+  	margin: auto;
+}
+.btn {
+	padding: 1% 3%;
+}
+
+.h{
+	max-width: 350px;
+	margin: auto;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	color: blue;
+}
+
+.main{
+	background-color: #FFFAFA;
+}
+
+.as{
+	color: red;
+}
+
+.bttn {
+	padding: 1% 3%;
+}
+
+</style>
+
+<body class="main">
+<hr>
+<h3 class="h"><a class="as">DELETE</a> SUBJECT HERE</h3>
+<div class="body">
+
+<form action="subDELETES" method="post">
+
+<b>SUBJECT NAME</b><br> 
+<input type="text" name="ssubject" required="required"><br><br>
+
+<button class="bttn" type="submit">DELETE</button>
+</form>
+
+</div>
+</body>
+</html>
+
+
+HTML CODE
+*********
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AKILA</title>
+</head>
+<style type="text/css">
+
+.body {
+	border:1px solid blue;
+	border-radius:10px;
+	padding-top: 20px;
+	padding : 20px;
+	max-width: 300px; 
+  	margin: auto;
+}
+
+.btn {
+	padding: 1% 3%;
+}
+
+.h{
+	max-width: 290px;
+	margin: auto;
+	padding-bottom: 20px;
+	padding-top: 25px;
+	color: blue;
+}
+
+.main{
+	background-color: #FFFAFA;
+}
+
+</style>
+
+<body class="main">
+<hr>
+<h3 class="h">ADD SUBJECT RECORD HERE</h3>
+
+<div class="body">
+
+<form action="NewSubINSERT" method="POST">
+
+<b>SUBJECT ID </b><br> 
+<input type="number" name="subid" required="required"><br><br>
+
+<b>SUBJECT CODE</b><br>
+<input type="text" name="subcode" required="required"><br><br>
+
+<b>SUBJECT NAME</b><br> 
+<input type="text" name="subname" required="required"><br><br>
+
+<b>ASSIGN TO CLASS</b><br> 
+<input type="text" name="classname" required="required"><br><br>
+
+<button class="btn" type="submit">Save</button>
+</form>
+</div>
+</body>
+</html>
+
+
+HTML CODE
+*********
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AKILA</title>
+</head>
+<style type="text/css">
+
+.main{
+	background-color: #FFFAFA;
+}
+
+.body {
+	border:1px solid blue;
+	border-radius:10px;
+	padding-top: 15px;
+	padding : 20px;
+	max-width: 300px; 
+  	margin: auto;
+}
+.btn {
+	padding: 1% 3%;
+}
+
+.hd{
+	color: blue;
+	padding-top: 2%;
+	padding-bottom: 1%;
+	max-width: 340px;
+	margin: auto;
+}
+
+</style>
+
+<body class="main">
+<hr>
+<h3 class="hd">UPDATE STUDENT RECORD'S HERE</h3>
+<div class="body">
+<form action="studentUPDATE" method="POST">
+<b>STUDENT ID </b><br> 
+<input type="number" name="studid" required="required"><br><br>
+
+<b>FIRST NAME </b><br>
+<input type="text" name="studfname" required="required"><br><br>
+
+<b>LAST NAME</b><br> 
+<input type="text" name="studlname" required="required"><br><br>
+
+<b>DATE OF BIRTH</b><br>
+<input type="date" name="studdob" required="required"><br><br>
+
+<b>ADDRESS</b><br>
+<input type="text" name="studadd" required="required"><br><br>
+
+<b>STUDENT NUMBER</b><br>
+<input type="number" name="studphone" required="required"><br><br>
+
+<b>ASSIGN CLASS</b><br>
+<input type="text" name="studclass" required="required"><br><br>
+
+<b>CONFORM ASSIGN CLASS</b><br>
+<input type="text" name="stud_class" required="required"><br><br>
+
+<button class="btn" type="submit">UPDATE</button>
+</form>
+</div>
+</body>
+</html>
+
+
+HTML CODE
+*********
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AKILA</title>
+</head>
+<style type="text/css">
+
+.main{
+	background-color: #FFFAFA;
+}
+
+.body {
+	border:1px solid blue;
+	border-radius:10px;
+	padding-top: 15px;
+	padding : 20px;
+	max-width: 300px; 
+  	margin: auto;
+}
+.btn {
+	padding: 1% 3%;
+}
+
+.hd{
+	color: blue;
+	padding-top: 2%;
+	padding-bottom: 1%;
+	max-width: 340px;
+	margin: auto;
+}
+
+</style>
+
+<body class="main">
+<hr>
+<h3 class="hd">DELETE STUDENT RECORD'S HERE</h3>
+<div class="body">
+<form action="DELETEstuds" method="POST">
+
+<b>STUDENT ID </b><br> 
+<input type="number" name="studid" required="required"><br><br>
+
+<button class="btn" type="submit">DELETE</button>
+</form>
+</div>
+</body>
+</html>
+
+
+HTML CODE
+*********
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AKILA</title>
+</head>
+<style type="text/css">
+.body {
+	border:1px solid blue;
+	border-radius:10px;
+	padding-top: 15px;
+	padding : 20px;
+	max-width: 300px; 
+  	margin: auto;
+}
+.btn {
+	padding: 1% 3%;
+}
+
+.h{
+	max-width: 290px;
+	margin: auto;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	color: blue;
+}
+
+.main{
+	background-color: #FFFAFA;
+}
+
+</style>
+
+<body class="main">
+<hr>
+<h3 class="h">ADD STUDENT RECORD HERE</h3>
+
+<div class="body">
+
+<form action="studINSERT" method="POST">
+
+<b>STUDENT ID </b><br> 
+<input type="number" name="studid" required="required"><br><br>
+
+<b>FIRST NAME </b><br>
+<input type="text" name="studfname" required="required"><br><br>
+
+<b>LAST NAME</b><br> 
+<input type="text" name="studlname" required="required"><br><br>
+
+<b>DATE OF BIRTH</b><br>
+<input type="date" name="studdob" required="required"><br><br>
+
+<b>ADDRESS</b><br>
+<input type="text" name="studadd" required="required"><br><br>
+
+<b>STUDENT NUMBER</b><br>
+<input type="number" name="studphone" required="required"><br><br>
+
+<b>ASSIGN CLASS</b><br>
+<input type="text" name="studclass" required="required"><br><br>
+
+<b>CONFORM CLASS</b><br>
+<input type="text" name="stud_class" required="required"><br><br>
+
+
+<button class="btn" type="submit">Save</button>
+</form>
+</div>
+</body>
+</html>
+
+
+HTML CODE
+*********
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AKILA</title>
+<style type="text/css">
+
+.body{
+	border:1px solid blue;
+	border-radius:10px;
+	padding-top: 5px;
+	padding : 60px;
+	max-width: 450px; 
+  	margin: auto;
+}
+
+.btn1{
+	padding: 1% 3%;
+	cursor: pointer;
+}
+
+.btn2{
+	padding: 1% 3%;
+	cursor: pointer;
+}
+
+.btn3{
+	padding: 1% 3%;
+	cursor: pointer;
+}
+
+.btn4{
+	padding: 1% 3%;
+	cursor: pointer;
+}
+
+.hed{
+	padding: 10px;
+	margin: auto;
+	max-width: 350px;
+	padding-top: 2%;
+	padding-bottom: 3%;
+	color: blue;
+}
+
+.li1{
+	background-color: black;
+}
+
+.li2{
+	background-color: blue;
+}
+
+.li3{
+	background-color:  blue;
+}
+
+.li4{
+	background-color:  blue;
+}
+
+.main{
+	background-color: #FFFAFA;
+}
+
+</style>
+</head>
+
+<body class="main">
+
+<hr class="li1">
+
+<h3 class="hed">Update, Delete and List the Student Record</h3>
+<div class="body">
+
+<h3>ADD STUDENT RECORD</h3>
+<a href="studentINSERT.html">
+<input type="submit" name="insert" value="Add" class="btn4">
+</a><br><br>
+
+<hr class="li4">
+
+<h3>LIST OF STUDENT RECORD</h3>
+<form action="studentRETRIVE" method="post">
+<input type="submit" name="retrive" value="See List" class="btn1">
+</form><br>
+
+<hr class="li2">
+
+<h3>UPDATE STUDENT RECORD</h3>
+<a href="studentUPDATE.html">
+<input type="submit" name="update" value="Update" class="btn2">
+</a><br><br>
+
+<hr class="li3">
+
+<h3>DELETE THE STUDENT RECORD</h3>
+<a href="studDELETE.html">
+<input type="submit" name="delete" value="Delete" class="btn3">
+</a>
+
+</div>
+</body>
+</html>
+
+
+HTML CODE
+*********
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AKILA</title>
+</head>
+<body>
+<h1>SUCCESSFULLY INSERTED</h1>
+</body>
+</html>
+
+
+HTML CODE
+*********
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AKILA</title>
+</head>
+<body>
+<h2>DATA IS NOT INSERTED</h2>
+</body>
+</html>
+
+
+HTML CODE
+*********
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>This Class and ID is Not in Our Record's</h1>
+</body>
+</html>
+
+
+HTML CODE
+*********
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AKILA</title>
+<style type="text/css">
+
+.body{
+	border:1px solid blue;
+	border-radius:10px;
+	padding-top: 2px;
+	padding : 30px;
+	max-width: 450px; 
+  	margin: auto;
+}
+
+.btn1{
+	padding: 1% 3%;
+	cursor: pointer;
+}
+
+.btn2{
+	padding: 1% 3%;
+	cursor: pointer;
+}
+
+.btn3{
+	padding: 1% 3%;
+	cursor: pointer;
+}
+
+.btn4{
+	padding: 1% 3%;
+	cursor: pointer;
+}
+
+.main{
+	background-color: #FFFAFA;
+}
+
+.hed{
+	padding-left: 50px;
+	margin: auto;
+	max-width: 280px;
+	padding-top: 2%;
+	padding-bottom: 3%;
+	color: blue;
+}
+
+</style>
+</head>
+<body class="main">
+<hr class="li4">
+<h3 class="hed">SUBJECT OPERATIONS</h3>
+
+<div class="body">
+
+<h3>LIST OF SUBJECT'S</h3>
+<form action="SUBlistRETRIVE" method="post">
+<input type="submit" name="subtechlist" value="List" class="btn2">
+</form><br>
+
+
+<hr>
+
+<h3>DELETE SUBJECT</h3>
+<a href="DELETEsub.html">
+<input type="submit" name="deletesub" value="Delete" class="btn4">
+</A><br><br>
+
+</div>
+</body>
+</html>
+
+
+HTML CODE
+*********
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AKILA</title>
+</head>
+<style type="text/css">
+.body {
+	border:1px solid blue;
+	border-radius:10px;
+	padding-top: 15px;
+	padding : 20px;
+	max-width: 300px; 
+  	margin: auto;
+}
+.btn {
+	padding: 1% 3%;
+}
+
+.h{
+	max-width: 350px;
+	margin: auto;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	color: blue;
+}
+
+.main{
+	background-color: #FFFAFA;
+}
+
+.as{
+	color: red;
+}
+
+.bttn {
+	padding: 1% 3%;
+}
+
+</style>
+
+<body class="main">
+<hr>
+<h3 class="h">ADD SUBJECT AND <a class="as">ASSIGN</a> TEACHER</h3>
+<div class="body">
+
+<form action="SUBtecher" method="post">
+
+<b>TECHER ID</b><br> 
+<input type="number" name="techid" required="required"><br><br>
+
+<b>SUBJECT NAME</b><br> 
+<input type="text" name="ssubject" required="required"><br><br>
+
+<b>ASSIGN TECHER</b><br>
+<input type="text" name="assigntech" required="required"><br><br>
+
+<b>ASSIGN CLASS</b><br>
+<input type="text" name="techclass" required="required"><br><br>
+
+<button class="bttn" type="submit">Save</button>
+</form>
+
+</div>
+</body>
+</html>
+
+
+HTML CODE
+*********
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AKILA</title>
+<style type="text/css">
+
+.body{
+	border:1px solid blue;
+	border-radius:10px;
+	padding-top: 2px;
+	padding : 30px;
+	max-width: 450px; 
+  	margin: auto;
+}
+
+.btn1{
+	padding: 1% 3%;
+	cursor: pointer;
+}
+
+.btn2{
+	padding: 1% 3%;
+	cursor: pointer;
+}
+
+.btn3{
+	padding: 1% 3%;
+	cursor: pointer;
+}
+
+.btn4{
+	padding: 1% 3%;
+	cursor: pointer;
+}
+
+.btn5{
+	padding: 1% 3%;
+	cursor: pointer;
+}
+
+.btn6{
+	padding: 1% 3%;
+	cursor: pointer;
+}
+
+.main{
+	background-color: #FFFAFA;
+}
+
+.hed{
+	padding: 10px;
+	margin: auto;
+	max-width: 370px;
+	padding-top: 2%;
+	padding-bottom: 3%;
+	color: blue;
+}
+
+</style>
+</head>
+<body class="main">
+<hr class="li4">
+<h3 class="hed">TEACHER AND SUBJECT OPERATIONS</h3>
+
+<div class="body">
+
+<h3>ADD SUBJECT AND ASSIGN TEACHER</h3>
+<a href="SUBteacher.html">
+<input type="submit" name="sub&tech" value="Add" class="btn1">
+</a><br><br>
+
+<hr>
+
+<h3>LIST OF SUBJECT WITH ASSIGNED TEACHER</h3>
+<form action="subtechRETRIVE" method="post">
+<input type="submit" name="listsub&tech" value="List" class="btn2">
+<br></form><br>
+
+<hr>
+
+<h3>UPDATE SUBJECT WITH ASSIGNED TEACHER</h3>
+<a href="subtechUPDATE.html">
+<input type="submit" name="updatesub&tech" value="Update" class="btn3">
+</a><br><br>
+
+<hr>
+
+<h3>DELETE ALL RECORD'S</h3>
+<a href="SUBtechDELETE.html">
+<input type="submit" name="updatesub&tech" value="Delete" class="btn4">
+</a><br><br>
+
+</div>
+</body>
+</html>
+
+
+HTML CODE
+*********
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AKILA</title>
+</head>
+<style type="text/css">
+.body {
+	border:1px solid blue;
+	border-radius:10px;
+	padding-top: 15px;
+	padding : 20px;
+	max-width: 300px; 
+  	margin: auto;
+}
+.btn {
+	padding: 1% 3%;
+}
+
+.h{
+	max-width: 500px;
+	margin: auto;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	color: blue;
+}
+
+.main{
+	background-color: #FFFAFA;
+}
+
+.as{
+	color: red;
+}
+
+.bttn {
+	padding: 1% 3%;
+}
+
+</style>
+
+<body class="main">
+<hr>
+<h3 class="h">DELETE SUBJECT AND <a class="as">ASSIGN</a> TEACHER RECORD</h3>
+<div class="body">
+
+<form action="SUBtecherDELETE" method="post">
+
+<b>TECHER ID</b><br><br> 
+<input type="number" name="techid" required="required"><br><br>
+
+<button class="bttn" type="submit">Delete</button>
+</form>
+
+</div>
+</body>
+</html>
+
+
+HTML CODE
+*********
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>PLEASE ENTER VALID CLASS ID AND NAME </h1>
+</body>
+</html>
+
+
+HTML CODE
+*********
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AKILA</title>
+</head>
+<style type="text/css">
+.body {
+	border:1px solid blue;
+	border-radius:10px;
+	padding-top: 15px;
+	padding : 20px;
+	max-width: 300px; 
+  	margin: auto;
+}
+.btn {
+	padding: 1% 3%;
+}
+
+.h{
+	max-width: 425px;
+	margin: auto;
+	padding-bottom: 3%;
+	padding-top: 2%;
+	color: blue;
+}
+
+.main{
+	background-color: #FFFAFA;
+}
+
+.as{
+	color: red;
+}
+
+.bttn {
+	padding: 1% 3%;
+}
+
+</style>
+
+<body class="main">
+<hr>
+<h3 class="h">UPDATE SUBJECT'S AND <a class="as">ASSIGND</a> TEACHER'S</h3>
+<div class="body">
+
+<form action="subtechUPDATE" method="post">
+
+<b>TECHER ID</b><br> 
+<input type="number" name="techid" required="required"><br><br>
+
+<b>SUBJECT NAME</b><br> 
+<input type="text" name="ssubject" required="required"><br><br>
+
+<b>ASSIGN TECHER</b><br>
+<input type="text" name="assigntech" required="required"><br><br>
+
+<button class="bttn" type="submit">Save</button>
+</form>
+
+</div>
+</body>
+</html>
